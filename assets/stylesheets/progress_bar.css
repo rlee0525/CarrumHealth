@@ -1,0 +1,108 @@
+.progress-bar-steps {
+	width: 100%;
+	margin: 15px;
+	position: relative;
+  height: 230px;
+  border-bottom: 2px solid #4caaf2;
+}
+
+.progress-bar-diagram {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+}
+
+.rect {
+  height: 30px;
+  width: 48%;
+  position: absolute;
+}
+
+svg > rect {
+  width: 48%;
+  height: 25px;
+  fill: white;
+  stroke: #4caaf2;
+  stroke-width: 2;
+}
+
+svg > circle {
+  cx: 50px;
+  cy: 50px;
+  r: 30px;
+  fill: white;
+  stroke: #4caaf2;
+  stroke-width: 2;
+}
+
+svg > rect:active {
+  width: 48%;
+  height: 25px;
+  fill: #4caaf2;
+  stroke: #4caaf2;
+  stroke-width: 2;
+}
+
+svg > circle:active {
+  cx: 50px;
+  cy: 50px;
+  r: 30px;
+  fill: #4caaf2;
+  stroke: #4caaf2;
+  stroke-width: 2;
+}
+
+#bar-one {
+  left: 13%;
+  top: calc(68% - 30px);
+}
+
+#bar-two {
+  left: 39%;
+  top: calc(68% - 30px);
+}
+
+#bar-three {
+  left: 63%;
+  top: calc(68% - 30px);
+}
+
+.circle-order {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+}
+
+.description-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 15px;
+}
+
+#steps-description {
+  margin: 100px 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#steps-details {
+  display: flex;
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  height: 25%;
+  padding: 15px;
+  letter-spacing: 1px;
+  background-color: #f9f9f9;
+  border: 2px solid #4caaf2;
+}

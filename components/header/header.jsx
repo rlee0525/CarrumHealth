@@ -8,7 +8,7 @@ class Header extends React.Component {
         <img id="logo1" src="../../assets/images/logo.png" />
         <span>Welcome Wayne Enterprises Members</span>
         <img id="logo2" src="../../assets/images/wane_logo.jpg" />
-        <FontAwesome className='fa-bars' size='2x' />
+        <FontAwesome className='fa-bars' name='bars' size='2x' />
       </div>
     );
   }
