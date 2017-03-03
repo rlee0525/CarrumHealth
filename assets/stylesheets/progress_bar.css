@@ -40,23 +40,6 @@ svg > circle {
   stroke-width: 2;
 }
 
-svg > rect:active {
-  width: 48%;
-  height: 25px;
-  fill: #4caaf2;
-  stroke: #4caaf2;
-  stroke-width: 2;
-}
-
-svg > circle:active {
-  cx: 50px;
-  cy: 50px;
-  r: 30px;
-  fill: #4caaf2;
-  stroke: #4caaf2;
-  stroke-width: 2;
-}
-
 #bar-one {
   left: 13%;
   top: calc(68% - 30px);
@@ -85,11 +68,15 @@ svg > circle:active {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-left: 15px;
+	padding-left: 10px;
+}
+
+.description-list > li{
+  padding: 15px;
 }
 
 #steps-description {
-  margin: 100px 0;
+  margin: 90px 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -101,8 +88,44 @@ svg > circle:active {
   top: 160px;
   width: 100%;
   height: 25%;
-  padding: 15px;
+  padding: 16px;
   letter-spacing: 1px;
   background-color: #f9f9f9;
   border: 2px solid #4caaf2;
+  -webkit-font-smoothing: antialiased;
+}
+
+#current-title {
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.fa-chevron-right {
+  margin: 0 15px;
+}
+
+.active {
+  fill: #4caaf2;
+}
+
+.selected {
+	box-sizing: border-box;
+  font-weight: bold;
+	border-left: 2px solid #4caaf2;
+	border-right: 2px solid #4caaf2;
+	border-top: 2px solid #4caaf2;
+	background-color: #f9f9f9;
+	z-index: 3;
+}
+
+.graphs {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0;
+}
+
+.not-chosen {
+	z-index: -1;
 }
