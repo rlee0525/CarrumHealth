@@ -1,29 +1,43 @@
+.container-fluid {
+  padding: 0;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .main-home {
   display: flex;
   flex-direction: row;
+  max-height: calc(100vh - 140px);
 }
 
 .left-bar {
   height: 100vh;
   width: 8vw;
   background-color: #ffd039;
+  max-height: calc(100vh - 140px);
 }
 
 .right-bar {
   height: 100vh;
   width: 8vw;
   background-color: #ffd039;
+  max-height: calc(100vh - 140px);
+}
+
+.maincontent-progress-main {
+  display: flex;
+  flex-direction: column;
+  width: 84vw;
+  background-color: white;
+  margin: 0 15px;
 }
 
 .maincontent-progress {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 84vw;
   background-color: white;
-  margin: 0 15px;
 }

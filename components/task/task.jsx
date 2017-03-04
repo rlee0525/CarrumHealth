@@ -1,6 +1,4 @@
 import React from 'react';
-import ProgressBar from './progress_bar';
-import ProgramApplication from './program_application';
 import { withRouter, hashHistory } from 'react-router';
 
 class Dashboard extends React.Component {
@@ -12,11 +10,11 @@ class Dashboard extends React.Component {
     };
 
     this.handleActiveStep = this.handleActiveStep.bind(this);
-    this.goToTask = this.goToTask.bind(this);
+    this.goToDashboard = this.goToDashboard.bind(this);
   }
 
-  goToTask() {
-    hashHistory.replace("/task");
+  goToDashboard() {
+    hashHistory.replace("/dashboard");
   }
 
   // Without backend, handling progression of the dashboard through activeStep
@@ -27,8 +25,7 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="maincontent-progress">
-        <ProgressBar handleActiveStep={this.handleActiveStep}/>
-        <ProgramApplication activeStep={this.state.activeStep}/>
+
       </div>
     );
   }

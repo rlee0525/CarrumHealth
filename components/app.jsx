@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/header';
-import Dashboard from './dashboard/dashboard';
+import Footer from './footer/footer';
 
 const App = ({ children }) => (
   <div className="container-fluid">
@@ -8,9 +8,12 @@ const App = ({ children }) => (
       <Header />
       <div className="main-home">
         <div className="left-bar"></div>
-        <Dashboard />
+        <div className="maincontent-progress-main">
+          { children }
+        </div>
         <div className="right-bar"></div>
       </div>
+      <Footer />
     </div>
   </div>
 );

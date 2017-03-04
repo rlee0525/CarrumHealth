@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  border-top: 2px solid #8c8c8c;
+  font-size: 23px;
+  color: #595959;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+#route {
+  margin: 0 auto;
+  width: 150px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+#route:hover {
+  cursor: pointer;
+  color: #4caaf2;
+  text-decoration: underline;
+}
