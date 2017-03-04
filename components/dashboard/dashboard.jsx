@@ -13,6 +13,7 @@ class Dashboard extends React.Component {
     this.handleActiveStep = this.handleActiveStep.bind(this);
   }
 
+  // Without backend, handling progression of the dashboard through activeStep
   handleActiveStep(activeStep) {
     this.setState({ activeStep });
   }

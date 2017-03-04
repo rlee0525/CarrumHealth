@@ -20,6 +20,8 @@ class ProgressBar extends React.Component {
     this.progressBar(this.state.percent);
   }
 
+  // the code needs to be DRY'ed. Keeps track of what's chosen.
+  // Limited without backend to compare the data
   deactivateAll() {
     $("#circle-one")[0].classList.remove("active");
     $("#circle-two")[0].classList.remove("active");

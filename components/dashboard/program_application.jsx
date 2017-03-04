@@ -8,30 +8,36 @@ class ProgramApplication extends React.Component {
     this.state = {
       nextStep: "Complete medical records release form",
       stepStatus: "Complete",
-      completeStatus: false
+      completeStatus: false,
+      careStatus: "Awaiting your action"
     };
   }
 
+  // update bottom half of dashboard based on activeStep change by progress bar
   componentWillReceiveProps(nextProps) {
     if (nextProps.activeStep === 1) {
       this.setState({
         nextStep: "Complete medical records release form",
         stepStatus: "Complete",
-        completeStatus: false
+        completeStatus: false,
+        careStatus: "Awaiting your action"
       });
     } else if (nextProps.activeStep === 2) {
       this.setState({
-        completeStatus: true
+        completeStatus: true,
+        careStatus: "Collecting records from providers"
       });
     } else if (nextProps.activeStep === 3) {
       this.setState({
         nextStep: "Discharge appointment",
         stepStatus: "Prepare for your appointment",
-        completeStatus: false
+        completeStatus: false,
+        careStatus: "Awaiting your action"
       });
     } else if (nextProps.activeStep === 4) {
       this.setState({
-        completeStatus: true
+        completeStatus: true,
+        careStatus: "Awaiting your payment"
       });
     }
   }
@@ -64,6 +70,28 @@ class ProgramApplication extends React.Component {
         </div>
         <div className="my-care-concierge">
           <span className="form-header">My Care Concierge</span>
+          <div className="current-action">
+            <img id="picture" src="../../assets/images/profile_picture.png"/>
+
+            <span className="next-steps-concierge">
+              Currently assisting with:
+              <p>
+                <FontAwesome className='fa-caret-right' name='caret-right' />
+                {this.state.careStatus}
+              </p>
+            </span>
+          </div>
+
+          <div className="contact">
+            <p>
+              <FontAwesome className='fa-envelope-o' name='envelope-o' />
+              Message
+            </p>
+            <p>
+              <FontAwesome className='fa-phone' name='phone' />
+              Call
+            </p>
+          </div>
         </div>
       </div>
     );
