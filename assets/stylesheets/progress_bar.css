@@ -1,6 +1,6 @@
 .progress-bar-steps {
 	width: 100%;
-	margin: 15px;
+	margin: 15px 0;
 	position: relative;
   height: 230px;
   border-bottom: 2px solid #4caaf2;
@@ -19,12 +19,12 @@
 
 .rect {
   height: 30px;
-  width: 48%;
+  width: 100vw;
   position: absolute;
 }
 
 svg > rect {
-  width: 48%;
+  width: 20vw;
   height: 25px;
   fill: white;
   stroke: #4caaf2;
@@ -72,7 +72,7 @@ svg > circle {
 }
 
 .description-list > li{
-  padding: 15px;
+  padding: 15px 5vw;
 }
 
 #steps-description {
@@ -80,6 +80,7 @@ svg > circle {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+	cursor: pointer;
 }
 
 #steps-details {

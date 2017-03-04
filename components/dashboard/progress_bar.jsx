@@ -6,7 +6,7 @@ class ProgressBar extends React.Component {
     super(props);
 
     this.state = {
-      percent: Math.floor(Math.random() * 100)
+      percent: Math.floor(Math.random() * 50 + 50)
     };
 
     this.drawQualification = this.drawQualification.bind(this);
@@ -21,64 +21,68 @@ class ProgressBar extends React.Component {
   }
 
   deactivateAll() {
-    document.getElementById("circle-one").classList.remove("active");
-    document.getElementById("circle-two").classList.remove("active");
-    document.getElementById("circle-three").classList.remove("active");
-    document.getElementById("circle-four").classList.remove("active");
-    document.getElementById("rect-one").classList.remove("active");
-    document.getElementById("rect-two").classList.remove("active");
-    document.getElementById("rect-three").classList.remove("active");
-    document.getElementById("desc-1").classList.remove("selected");
-    document.getElementById("desc-2").classList.remove("selected");
-    document.getElementById("desc-3").classList.remove("selected");
-    document.getElementById("desc-4").classList.remove("selected");
-    document.getElementById("graph-one").classList.add("not-chosen");
-    document.getElementById("graph-two").classList.add("not-chosen");
-    document.getElementById("graph-three").classList.add("not-chosen");
-    document.getElementById("graph-four").classList.add("not-chosen");
+    $("#circle-one")[0].classList.remove("active");
+    $("#circle-two")[0].classList.remove("active");
+    $("#circle-three")[0].classList.remove("active");
+    $("#circle-four")[0].classList.remove("active");
+    $("#rect-one")[0].classList.remove("active");
+    $("#rect-two")[0].classList.remove("active");
+    $("#rect-three")[0].classList.remove("active");
+    $("#desc-1")[0].classList.remove("selected");
+    $("#desc-2")[0].classList.remove("selected");
+    $("#desc-3")[0].classList.remove("selected");
+    $("#desc-4")[0].classList.remove("selected");
+    $("#graph-one")[0].classList.add("not-chosen");
+    $("#graph-two")[0].classList.add("not-chosen");
+    $("#graph-three")[0].classList.add("not-chosen");
+    $("#graph-four")[0].classList.add("not-chosen");
   }
 
   drawQualification() {
-    document.getElementById("circle-one").classList.add("active");
-    document.getElementById("desc-1").classList.add("selected");
-    document.getElementById("graph-one").classList.remove("not-chosen");
-    let percent = Math.floor(Math.random() * 100);
+    $("#circle-one")[0].classList.add("active");
+    $("#desc-1")[0].classList.add("selected");
+    $("#graph-one")[0].classList.remove("not-chosen");
+    this.props.handleActiveStep(1);
+    let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
   }
 
   drawPreparation() {
-    document.getElementById("circle-one").classList.add("active");
-    document.getElementById("circle-two").classList.add("active");
-    document.getElementById("rect-one").classList.add("active");
-    document.getElementById("desc-2").classList.add("selected");
-    document.getElementById("graph-two").classList.remove("not-chosen");
-    let percent = Math.floor(Math.random() * 100);
+    $("#circle-one")[0].classList.add("active");
+    $("#circle-two")[0].classList.add("active");
+    $("#rect-one")[0].classList.add("active");
+    $("#desc-2")[0].classList.add("selected");
+    $("#graph-two")[0].classList.remove("not-chosen");
+    this.props.handleActiveStep(2);
+    let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
   }
 
   drawStay() {
-    document.getElementById("circle-one").classList.add("active");
-    document.getElementById("circle-two").classList.add("active");
-    document.getElementById("circle-three").classList.add("active");
-    document.getElementById("rect-one").classList.add("active");
-    document.getElementById("rect-two").classList.add("active");
-    document.getElementById("desc-3").classList.add("selected");
-    document.getElementById("graph-three").classList.remove("not-chosen");
-    let percent = Math.floor(Math.random() * 100);
+    $("#circle-one")[0].classList.add("active");
+    $("#circle-two")[0].classList.add("active");
+    $("#circle-three")[0].classList.add("active");
+    $("#rect-one")[0].classList.add("active");
+    $("#rect-two")[0].classList.add("active");
+    $("#desc-3")[0].classList.add("selected");
+    $("#graph-three")[0].classList.remove("not-chosen");
+    this.props.handleActiveStep(3);
+    let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
   }
 
   drawActivities() {
-    document.getElementById("circle-one").classList.add("active");
-    document.getElementById("circle-two").classList.add("active");
-    document.getElementById("circle-three").classList.add("active");
-    document.getElementById("circle-four").classList.add("active");
-    document.getElementById("rect-one").classList.add("active");
-    document.getElementById("rect-two").classList.add("active");
-    document.getElementById("rect-three").classList.add("active");
-    document.getElementById("desc-4").classList.add("selected");
-    document.getElementById("graph-four").classList.remove("not-chosen");
-    let percent = Math.floor(Math.random() * 100);
+    $("#circle-one")[0].classList.add("active");
+    $("#circle-two")[0].classList.add("active");
+    $("#circle-three")[0].classList.add("active");
+    $("#circle-four")[0].classList.add("active");
+    $("#rect-one")[0].classList.add("active");
+    $("#rect-two")[0].classList.add("active");
+    $("#rect-three")[0].classList.add("active");
+    $("#desc-4")[0].classList.add("selected");
+    $("#graph-four")[0].classList.remove("not-chosen");
+    this.props.handleActiveStep(4);
+    let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
   }
 

@@ -1,0 +1,78 @@
+.program_application {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.my-next-steps {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 200px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+}
+
+.my-care-concierge {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: 200px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+}
+
+.form-header {
+  padding: 7px 20px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #d9d9d9;
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%;
+  height: 35px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.next-steps-form {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa-caret-right {
+  color: #4caaf2;
+  font-size: 20px;
+  padding: 15px 5px 0 30px;
+  cursor: pointer;
+}
+
+.fa-check-circle {
+  color: #00cc00;
+  font-size: 20px;
+  padding: 15px 5px 0 30px;
+  cursor: pointer;
+}
+
+#status-form {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4caaf2;
+  padding: 5px 5px 0 43px;
+}
+
+.complete-status {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #777;
+}
+
+.next-steps-form p {
+  padding-left: 52px;
+}

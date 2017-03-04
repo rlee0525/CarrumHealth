@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/header';
-import ProgressBar from './progress_bar/progress_bar';
+import Dashboard from './dashboard/dashboard';
 
 const App = ({ children }) => (
   <div className="container-fluid">
@@ -8,10 +8,7 @@ const App = ({ children }) => (
       <Header />
       <div className="main-home">
         <div className="left-bar"></div>
-        <div className="maincontent-placeholder">
-          <ProgressBar />
-          { children }
-        </div>
+        <Dashboard />
         <div className="right-bar"></div>
       </div>
     </div>
