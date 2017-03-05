@@ -53,6 +53,26 @@ class Task extends React.Component {
     this.setState({ specialist });
   }
 
+  deletePcp() {
+    let pcp = false;
+    this.setState({ pcp });
+  }
+
+  deleteOrtho() {
+    let specialist = false;
+    this.setState({ specialist });
+  }
+
+  editPcp() {
+    let step = 2;
+    this.setState({ step });
+  }
+
+  editOrtho() {
+    let step = 3;
+    this.setState({ step });
+  }
+
   update(property) {
     return e => this.setState({
       [property]: e.currentTarget.value
@@ -93,7 +113,8 @@ class Task extends React.Component {
         <div className="form-pcp">
           <span id="question">Who is your Primary Care Physician (PCP)?</span>
           <span id="checkbox-1">
-          <input type="checkbox" checked={!this.state.pcp} id="checkbox1" onClick={this.pcpCheckBox}/>
+          <input type="checkbox" checked={!this.state.pcp}
+                 id="checkbox1" onClick={this.pcpCheckBox}/>
             Don't have PCP
           </span>
           <span id="name-input">
@@ -166,7 +187,8 @@ class Task extends React.Component {
             Who is the orthopedic specialist that you have seen?
           </span>
           <span id="checkbox-2">
-            <input type="checkbox" checked={!this.state.specialist} id="checkbox2" onClick={this.orthoCheckBox}/>
+            <input type="checkbox" checked={!this.state.specialist}
+                   id="checkbox2" onClick={this.orthoCheckBox}/>
             Have not seen a specialist
           </span>
           <span id="name-input">
@@ -250,14 +272,14 @@ class Task extends React.Component {
               <div id="physician-name">
                 <span id="details-label">Name:</span>
                 <span>{this.state.name}</span>
-                <span id="link-fa">
+                <span id="link-fa" onClick={this.editPcp.bind(this)}>
                   <FontAwesome className="fa-pencil" name="pencil" /> Edit
                 </span>
               </div>
               <div id="physician-phone">
                 <span id="details-label">Phone:</span>
                 <span>{this.state.phoneNumber}</span>
-                <span id="link-fa">
+                <span id="link-fa" onClick={this.deletePcp.bind(this)}>
                   <FontAwesome className="fa-trash" name="trash" /> Delete
                 </span>
               </div>
@@ -277,14 +299,14 @@ class Task extends React.Component {
               <div id="physician-name">
                 <span id="details-label">Name:</span>
                 <span>{this.state.orthoName}</span>
-                <span id="link-fa">
+                <span id="link-fa" onClick={this.editOrtho.bind(this)}>
                   <FontAwesome className="fa-pencil" name="pencil" /> Edit
                 </span>
               </div>
               <div id="physician-phone">
                 <span id="details-label">Phone:</span>
                 <span>{this.state.orthoPhoneNumber}</span>
-                <span id="link-fa">
+                <span id="link-fa" onClick={this.deleteOrtho.bind(this)}>
                   <FontAwesome className="fa-trash" name="trash" /> Delete
                 </span>
               </div>
@@ -298,7 +320,7 @@ class Task extends React.Component {
               </div>
             </div>
           </div>)}
-          <div id="additional-physician">
+          <div id="additional-physician" onClick={this.editOrtho.bind(this)}>
             <button>+ Additional Physician</button>
           </div>
         </div>
@@ -308,7 +330,7 @@ class Task extends React.Component {
             <FontAwesome className='fa-chevron-left'
               name='chevron-left' />Back
           </button>
-          <button id="continue-button">
+          <button id="continue-button-2">
             Done with physicians
           </button>
         </div>
