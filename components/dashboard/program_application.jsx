@@ -71,7 +71,7 @@ class ProgramApplication extends React.Component {
         <div className="my-care-concierge">
           <span className="form-header">My Care Concierge</span>
           <div className="current-action">
-            <img id="picture" src="../../assets/images/profile_picture.png"/>
+            <img id="picture" src="http://res.cloudinary.com/rlee0525/image/upload/v1488677836/profile_picture_zpk86t.png"/>
 
             <span className="next-steps-concierge">
               Currently assisting with:
