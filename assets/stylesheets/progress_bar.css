@@ -85,6 +85,10 @@ svg > circle {
 	cursor: pointer;
 }
 
+.description-list > li:hover {
+	font-weight: bold;
+}
+
 #steps-details {
   display: flex;
   position: absolute;

@@ -1,0 +1,228 @@
+#form-title {
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #4a7ebb;
+  border-bottom: 2px solid #4a7ebb;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #afafaf;
+}
+
+#exclamation {
+  font-size: 30px;
+  color: #4a7ebb;
+  padding: 10px 10px 0 5px;
+}
+
+#release-instructions {
+  padding: 17px 0 25px 0;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+}
+
+.one-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#continue-button {
+  background: linear-gradient(180deg, #4a9ee4, #3278b4);
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#continue-button:hover {
+  opacity: 0.8;
+}
+
+.fa-chevron-left {
+  margin-right: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#back-button {
+  background: none;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  color: #a6a6a6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#back-button:hover {
+  font-weight: bold;
+}
+
+.two-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-pcp {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #afafaf;
+}
+
+.form-pcp > span, .form-pcp > div, .form-pcp > div > span {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.form-pcp > span > p, .form-pcp > div > span > p {
+  margin: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+#checkbox-1, #checkbox-2, #address-input, #address-input-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#address-input > p, #address-input-2 > p {
+  display: flex;
+  flex-direction: column;
+}
+
+#question {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+#checkbox-1, #checkbox-2 {
+  display: flex;
+  font-size: 20px;
+}
+
+input[type=checkbox] {
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  margin: 5px 15px 0 5px;
+  cursor: pointer;
+}
+
+#address-one-input, #address-two-input,
+#city-input, #state-input, #zip-input {
+  flex: 1;
+}
+
+#address-one-input:first-child, #city-input, #state-input {
+  margin-right: 25px;
+}
+
+#mrvd-input {
+  margin-bottom: 20px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#review-information {
+  padding-top: 15px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#details-label {
+  font-weight: bold;
+  color: #afafaf;
+}
+
+#information-container {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 20px;
+}
+
+#title {
+  padding-top: 10px;
+  font-size: 25px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+#information-container > div > span, #information-container > div > div {
+  text-align: left;
+  width: 33%;
+}
+
+#information-container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#pcp-specialist, #orthopedic-specialist, .review-form {
+  border-bottom: 2px solid #afafaf;
+}
+
+#link-fa {
+  color: #4a9ee4;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fa-pencil, .fa-trash {
+  margin-right: 5px;
+}
+
+#address-summary {
+  display: flex;
+  flex-direction: column;
+}
+
+#additional-physician {
+  align-self: flex-end;
+}
+
+#additional-physician > button {
+  background: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #3278b4;
+  padding: 5px;
+  border: 1px solid #3278b4;
+  margin: 15px 0 45px 0;
+  cursor: pointer;
+}
+
+#additional-physician > button:hover {
+  background: #3278b4;
+  color: white;
+  cursor: pointer;
+}

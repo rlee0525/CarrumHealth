@@ -149,7 +149,7 @@ class ProgressBar extends React.Component {
         </div>
         <div id="steps-details">
           <span id="current-title">
-            <FontAwesome className='fa-chevron-right' name='chevron' />
+            <FontAwesome className='fa-chevron-right' name='chevron-right' />
             Currently performing:
           </span>
           <span> Medical records collection</span>
