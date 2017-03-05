@@ -244,18 +244,22 @@ class Task extends React.Component {
             Review the information about physicians you have seen
             regarding your condition and include additional ones as necessary.
           </span>
-          <div id="pcp-specialist">
+          {this.state.pcp && (<div id="pcp-specialist">
             <div id="title">Primary Care Physician</div>
             <div id="information-container">
               <div id="physician-name">
                 <span id="details-label">Name:</span>
                 <span>{this.state.name}</span>
-                <span id="link-fa"><FontAwesome className="fa-pencil" name="pencil" /> Edit</span>
+                <span id="link-fa">
+                  <FontAwesome className="fa-pencil" name="pencil" /> Edit
+                </span>
               </div>
               <div id="physician-phone">
                 <span id="details-label">Phone:</span>
                 <span>{this.state.phoneNumber}</span>
-                <span id="link-fa"><FontAwesome className="fa-trash" name="trash" /> Delete</span>
+                <span id="link-fa">
+                  <FontAwesome className="fa-trash" name="trash" /> Delete
+                </span>
               </div>
               <div id="physician-address">
                 <span id="details-label">Address:</span>
@@ -266,19 +270,23 @@ class Task extends React.Component {
                 <span></span>
               </div>
             </div>
-          </div>
-          <div id="orthopedic-specialist">
+          </div>)}
+          {this.state.specialist && (<div id="orthopedic-specialist">
             <div id="title">Orthopedic Specialist</div>
             <div id="information-container">
               <div id="physician-name">
                 <span id="details-label">Name:</span>
                 <span>{this.state.orthoName}</span>
-                <span id="link-fa"><FontAwesome className="fa-pencil" name="pencil" /> Edit</span>
+                <span id="link-fa">
+                  <FontAwesome className="fa-pencil" name="pencil" /> Edit
+                </span>
               </div>
               <div id="physician-phone">
                 <span id="details-label">Phone:</span>
                 <span>{this.state.orthoPhoneNumber}</span>
-                <span id="link-fa"><FontAwesome className="fa-trash" name="trash" /> Delete</span>
+                <span id="link-fa">
+                  <FontAwesome className="fa-trash" name="trash" /> Delete
+                </span>
               </div>
               <div id="physician-address">
                 <span id="details-label">Address:</span>
@@ -289,7 +297,7 @@ class Task extends React.Component {
                 <span></span>
               </div>
             </div>
-          </div>
+          </div>)}
           <div id="additional-physician">
             <button>+ Additional Physician</button>
           </div>
