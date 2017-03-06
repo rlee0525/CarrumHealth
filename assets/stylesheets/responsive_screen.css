@@ -103,6 +103,7 @@
   }
 
   /*dashboard*/
+  /*program_application*/
 
   .program_application {
     flex-direction: column;
@@ -145,4 +146,154 @@
     padding: 30px 0 0 0;
   }
 
+  .next-steps-form p {
+    padding-left: 42px;
+  }
+
+  /*dashboard*/
+  /*progress bar*/
+
+  .progress-bar-steps {
+  	width: 100%;
+  	margin: 15px 0;
+  	position: relative;
+    height: 147px;
+    border-bottom: 2px solid #4caaf2;
+  }
+
+  .progress-bar-diagram {
+    display: none;
+  }
+
+  .progress-bar-diagram, #steps-description,
+  #steps-details {
+    display: none;
+  }
+
+  .progress-bar-diagram-mobile, #steps-description-mobile {
+    display: block;
+  }
+
+  .circle {
+    height: 30px;
+    width: 30px;
+  }
+
+  .rect {
+    height: 15px;
+    width: 50vw;
+    position: absolute;
+  }
+
+  svg > rect {
+    width: 18vw;
+    height: 10px;
+    fill: white;
+    stroke: #4caaf2;
+    stroke-width: 2;
+  }
+
+  svg > circle {
+    cx: 15px;
+    cy: 15px;
+    r: 13px;
+    fill: white;
+    stroke: #4caaf2;
+    stroke-width: 2;
+    cursor: pointer;
+  }
+
+  #m-bar-one {
+    left: 17%;
+    top: calc(27% - 30px);
+  }
+
+  #m-bar-two {
+    left: 39%;
+    top: calc(27% - 30px);
+  }
+
+  #m-bar-three {
+    left: 62%;
+    top: calc(27% - 30px);
+  }
+
+  .circle-order {
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+  }
+
+  .chosen {
+    display: none;
+  }
+
+  .description-list > li {
+    display: none;
+  }
+
+  .selected {
+    display: block !important;
+  	box-sizing: border-box;
+    font-weight: bold;
+    width: 100%;
+  	border: 2px solid #4caaf2;
+  	background-color: #f9f9f9;
+  	z-index: 3;
+    padding-left: 75px !important;
+    margin-top: 45px;
+  }
+
+  .selected > .fa-caret-right {
+    padding: 5px 10px 0 15px;
+  }
+
+  .selected > p {
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+
+  .description-list {
+    padding: 0;
+  }
+
+  .description-list > li{
+    padding: 15px 0 15px 70px;
+  }
+
+  .graphs {
+  	list-style: none;
+  	display: flex;
+    position: absolute;
+  	padding: 0;
+    top: 38px;
+    left: 18px;
+    z-index: 5;
+  }
+
+  .circle-bg {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+  }
+
+  svg > circle#m-circle-five {
+    cx: 40px;
+    cy: 40px;
+    r: 25px;
+    fill: #4caaf2;
+    stroke: #4caaf2;
+    stroke-width: 2;
+  }
+
+  .not-chosen {
+  	display: none;
+  }
 }

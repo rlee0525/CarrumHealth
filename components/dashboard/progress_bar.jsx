@@ -38,12 +38,30 @@ class ProgressBar extends React.Component {
     $("#graph-two")[0].classList.add("not-chosen");
     $("#graph-three")[0].classList.add("not-chosen");
     $("#graph-four")[0].classList.add("not-chosen");
+    $("#circle-one")[0].classList.remove("active");
+    $("#m-circle-two")[0].classList.remove("active");
+    $("#m-circle-three")[0].classList.remove("active");
+    $("#m-circle-four")[0].classList.remove("active");
+    $("#m-rect-one")[0].classList.remove("active");
+    $("#m-rect-two")[0].classList.remove("active");
+    $("#m-rect-three")[0].classList.remove("active");
+    $("#m-desc-1")[0].classList.remove("selected");
+    $("#m-desc-2")[0].classList.remove("selected");
+    $("#m-desc-3")[0].classList.remove("selected");
+    $("#m-desc-4")[0].classList.remove("selected");
+    $("#m-graph-one")[0].classList.add("not-chosen");
+    $("#m-graph-two")[0].classList.add("not-chosen");
+    $("#m-graph-three")[0].classList.add("not-chosen");
+    $("#m-graph-four")[0].classList.add("not-chosen");
   }
 
   drawQualification() {
     $("#circle-one")[0].classList.add("active");
     $("#desc-1")[0].classList.add("selected");
     $("#graph-one")[0].classList.remove("not-chosen");
+    $("#m-circle-one")[0].classList.add("active");
+    $("#m-desc-1")[0].classList.add("selected");
+    $("#m-graph-one")[0].classList.remove("not-chosen");
     this.props.handleActiveStep(1);
     let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
@@ -55,6 +73,11 @@ class ProgressBar extends React.Component {
     $("#rect-one")[0].classList.add("active");
     $("#desc-2")[0].classList.add("selected");
     $("#graph-two")[0].classList.remove("not-chosen");
+    $("#m-circle-one")[0].classList.add("active");
+    $("#m-circle-two")[0].classList.add("active");
+    $("#m-rect-one")[0].classList.add("active");
+    $("#m-desc-2")[0].classList.add("selected");
+    $("#m-graph-two")[0].classList.remove("not-chosen");
     this.props.handleActiveStep(2);
     let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
@@ -68,6 +91,13 @@ class ProgressBar extends React.Component {
     $("#rect-two")[0].classList.add("active");
     $("#desc-3")[0].classList.add("selected");
     $("#graph-three")[0].classList.remove("not-chosen");
+    $("#m-circle-one")[0].classList.add("active");
+    $("#m-circle-two")[0].classList.add("active");
+    $("#m-circle-three")[0].classList.add("active");
+    $("#m-rect-one")[0].classList.add("active");
+    $("#m-rect-two")[0].classList.add("active");
+    $("#m-desc-3")[0].classList.add("selected");
+    $("#m-graph-three")[0].classList.remove("not-chosen");
     this.props.handleActiveStep(3);
     let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
@@ -83,6 +113,15 @@ class ProgressBar extends React.Component {
     $("#rect-three")[0].classList.add("active");
     $("#desc-4")[0].classList.add("selected");
     $("#graph-four")[0].classList.remove("not-chosen");
+    $("#m-circle-one")[0].classList.add("active");
+    $("#m-circle-two")[0].classList.add("active");
+    $("#m-circle-three")[0].classList.add("active");
+    $("#m-circle-four")[0].classList.add("active");
+    $("#m-rect-one")[0].classList.add("active");
+    $("#m-rect-two")[0].classList.add("active");
+    $("#m-rect-three")[0].classList.add("active");
+    $("#m-desc-4")[0].classList.add("selected");
+    $("#m-graph-four")[0].classList.remove("not-chosen");
     this.props.handleActiveStep(4);
     let percent = Math.floor(Math.random() * 50 + 50);
     this.setState({ percent });
@@ -153,6 +192,35 @@ class ProgressBar extends React.Component {
             Currently performing:
           </span>
           <span> Medical records collection</span>
+        </div>
+
+        <div className="progress-bar-diagram-mobile">
+          <div className="rect-order">
+            <svg className="rect" id="m-bar-one"><rect className="" id="m-rect-one"/></svg>
+            <svg className="rect" id="m-bar-two"><rect className="" id="m-rect-two"/></svg>
+            <svg className="rect" id="m-bar-three"><rect className="" id="m-rect-three"/></svg>
+          </div>
+          <div className="circle-order">
+            <svg className="circle"><circle className="active" id="m-circle-one" onClick={() => { this.deactivateAll(); this.drawQualification(); }}/></svg>
+            <svg className="circle"><circle className="" id="m-circle-two" onClick={() => { this.deactivateAll(); this.drawPreparation(); }}/></svg>
+            <svg className="circle"><circle className="" id="m-circle-three" onClick={() => { this.deactivateAll(); this.drawStay(); }} /></svg>
+            <svg className="circle"><circle className="" id="m-circle-four" onClick={() => { this.deactivateAll(); this.drawActivities(); }}/></svg>
+          </div>
+          <ul className="graphs">
+            <svg className="circle-bg"><circle id="m-circle-five" /></svg>
+            <li className="" id="m-graph-one">{this.progressBar(percent)}</li>
+            <li className="not-chosen" id="m-graph-two">{this.progressBar(percent)}</li>
+            <li className="not-chosen" id="m-graph-three">{this.progressBar(percent)}</li>
+            <li className="not-chosen" id="m-graph-four">{this.progressBar(percent)}</li>
+          </ul>
+        </div>
+        <div id="steps-description-mobile">
+          <ul className="description-list">
+            <li className="selected" id="m-desc-1" onClick={() => { this.deactivateAll(); this.drawQualification(); }}>1. Program Qualification<p><FontAwesome className='fa-caret-right' name='caret-right' />Medical records collection</p></li>
+            <li id="m-desc-2" onClick={() => { this.deactivateAll(); this.drawPreparation(); }}>2. Pre-Admission Preparation<br/><p><FontAwesome className='fa-caret-right' name='caret-right' />Medical records collection</p></li>
+            <li id="m-desc-3" onClick={() => { this.deactivateAll(); this.drawStay(); }}>3. Hospital Stay<br/><p><FontAwesome className='fa-caret-right' name='caret-right' />Discharge</p></li>
+            <li id="m-desc-4" onClick={() => { this.deactivateAll(); this.drawActivities(); }}>4. Post-Discharge Activities<br/><p><FontAwesome className='fa-caret-right' name='caret-right' />Medical records collection</p></li>
+          </ul>
         </div>
       </div>
     );

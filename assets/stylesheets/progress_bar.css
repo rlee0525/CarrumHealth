@@ -136,3 +136,7 @@ svg > circle {
 .not-chosen {
 	z-index: -1;
 }
+
+.progress-bar-diagram-mobile, #steps-description-mobile {
+	display: none;
+}

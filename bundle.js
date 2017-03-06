@@ -27051,6 +27051,21 @@
 	      $("#graph-two")[0].classList.add("not-chosen");
 	      $("#graph-three")[0].classList.add("not-chosen");
 	      $("#graph-four")[0].classList.add("not-chosen");
+	      $("#circle-one")[0].classList.remove("active");
+	      $("#m-circle-two")[0].classList.remove("active");
+	      $("#m-circle-three")[0].classList.remove("active");
+	      $("#m-circle-four")[0].classList.remove("active");
+	      $("#m-rect-one")[0].classList.remove("active");
+	      $("#m-rect-two")[0].classList.remove("active");
+	      $("#m-rect-three")[0].classList.remove("active");
+	      $("#m-desc-1")[0].classList.remove("selected");
+	      $("#m-desc-2")[0].classList.remove("selected");
+	      $("#m-desc-3")[0].classList.remove("selected");
+	      $("#m-desc-4")[0].classList.remove("selected");
+	      $("#m-graph-one")[0].classList.add("not-chosen");
+	      $("#m-graph-two")[0].classList.add("not-chosen");
+	      $("#m-graph-three")[0].classList.add("not-chosen");
+	      $("#m-graph-four")[0].classList.add("not-chosen");
 	    }
 	  }, {
 	    key: 'drawQualification',
@@ -27058,6 +27073,9 @@
 	      $("#circle-one")[0].classList.add("active");
 	      $("#desc-1")[0].classList.add("selected");
 	      $("#graph-one")[0].classList.remove("not-chosen");
+	      $("#m-circle-one")[0].classList.add("active");
+	      $("#m-desc-1")[0].classList.add("selected");
+	      $("#m-graph-one")[0].classList.remove("not-chosen");
 	      this.props.handleActiveStep(1);
 	      var percent = Math.floor(Math.random() * 50 + 50);
 	      this.setState({ percent: percent });
@@ -27070,6 +27088,11 @@
 	      $("#rect-one")[0].classList.add("active");
 	      $("#desc-2")[0].classList.add("selected");
 	      $("#graph-two")[0].classList.remove("not-chosen");
+	      $("#m-circle-one")[0].classList.add("active");
+	      $("#m-circle-two")[0].classList.add("active");
+	      $("#m-rect-one")[0].classList.add("active");
+	      $("#m-desc-2")[0].classList.add("selected");
+	      $("#m-graph-two")[0].classList.remove("not-chosen");
 	      this.props.handleActiveStep(2);
 	      var percent = Math.floor(Math.random() * 50 + 50);
 	      this.setState({ percent: percent });
@@ -27084,6 +27107,13 @@
 	      $("#rect-two")[0].classList.add("active");
 	      $("#desc-3")[0].classList.add("selected");
 	      $("#graph-three")[0].classList.remove("not-chosen");
+	      $("#m-circle-one")[0].classList.add("active");
+	      $("#m-circle-two")[0].classList.add("active");
+	      $("#m-circle-three")[0].classList.add("active");
+	      $("#m-rect-one")[0].classList.add("active");
+	      $("#m-rect-two")[0].classList.add("active");
+	      $("#m-desc-3")[0].classList.add("selected");
+	      $("#m-graph-three")[0].classList.remove("not-chosen");
 	      this.props.handleActiveStep(3);
 	      var percent = Math.floor(Math.random() * 50 + 50);
 	      this.setState({ percent: percent });
@@ -27100,6 +27130,15 @@
 	      $("#rect-three")[0].classList.add("active");
 	      $("#desc-4")[0].classList.add("selected");
 	      $("#graph-four")[0].classList.remove("not-chosen");
+	      $("#m-circle-one")[0].classList.add("active");
+	      $("#m-circle-two")[0].classList.add("active");
+	      $("#m-circle-three")[0].classList.add("active");
+	      $("#m-circle-four")[0].classList.add("active");
+	      $("#m-rect-one")[0].classList.add("active");
+	      $("#m-rect-two")[0].classList.add("active");
+	      $("#m-rect-three")[0].classList.add("active");
+	      $("#m-desc-4")[0].classList.add("selected");
+	      $("#m-graph-four")[0].classList.remove("not-chosen");
 	      this.props.handleActiveStep(4);
 	      var percent = Math.floor(Math.random() * 50 + 50);
 	      this.setState({ percent: percent });
@@ -27280,6 +27319,153 @@
 	            'span',
 	            null,
 	            ' Medical records collection'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'progress-bar-diagram-mobile' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'rect-order' },
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'rect', id: 'm-bar-one' },
+	              _react2.default.createElement('rect', { className: '', id: 'm-rect-one' })
+	            ),
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'rect', id: 'm-bar-two' },
+	              _react2.default.createElement('rect', { className: '', id: 'm-rect-two' })
+	            ),
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'rect', id: 'm-bar-three' },
+	              _react2.default.createElement('rect', { className: '', id: 'm-rect-three' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'circle-order' },
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'circle' },
+	              _react2.default.createElement('circle', { className: 'active', id: 'm-circle-one', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawQualification();
+	                } })
+	            ),
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'circle' },
+	              _react2.default.createElement('circle', { className: '', id: 'm-circle-two', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawPreparation();
+	                } })
+	            ),
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'circle' },
+	              _react2.default.createElement('circle', { className: '', id: 'm-circle-three', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawStay();
+	                } })
+	            ),
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'circle' },
+	              _react2.default.createElement('circle', { className: '', id: 'm-circle-four', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawActivities();
+	                } })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'graphs' },
+	            _react2.default.createElement(
+	              'svg',
+	              { className: 'circle-bg' },
+	              _react2.default.createElement('circle', { id: 'm-circle-five' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: '', id: 'm-graph-one' },
+	              this.progressBar(percent)
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'not-chosen', id: 'm-graph-two' },
+	              this.progressBar(percent)
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'not-chosen', id: 'm-graph-three' },
+	              this.progressBar(percent)
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'not-chosen', id: 'm-graph-four' },
+	              this.progressBar(percent)
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'steps-description-mobile' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'description-list' },
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'selected', id: 'm-desc-1', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawQualification();
+	                } },
+	              '1. Program Qualification',
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-caret-right', name: 'caret-right' }),
+	                'Medical records collection'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'm-desc-2', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawPreparation();
+	                } },
+	              '2. Pre-Admission Preparation',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-caret-right', name: 'caret-right' }),
+	                'Medical records collection'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'm-desc-3', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawStay();
+	                } },
+	              '3. Hospital Stay',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-caret-right', name: 'caret-right' }),
+	                'Discharge'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { id: 'm-desc-4', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawActivities();
+	                } },
+	              '4. Post-Discharge Activities',
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-caret-right', name: 'caret-right' }),
+	                'Medical records collection'
+	              )
+	            )
 	          )
 	        )
 	      );
