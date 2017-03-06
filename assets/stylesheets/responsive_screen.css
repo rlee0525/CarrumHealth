@@ -1,5 +1,10 @@
 @media screen and (max-width: 850px) {
 
+  /*layout*/
+  .main-home {
+    max-height: none;
+  }
+
   /*header*/
   #logo1 {
     display: none;
@@ -21,11 +26,6 @@
 
   .fa-bars {
     margin-right: 2vw;
-  }
-
-  /*layout*/
-  .main-home {
-    max-height: none;
   }
 
   /*task*/
@@ -73,6 +73,7 @@
     position: absolute;
     color: #4a9ee4;
     margin-left: 60vw;
+    font-size: 20px;
   }
 
   #link-fa-2:hover {
@@ -94,5 +95,10 @@
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin-bottom: 20px;
+  }
+
+  #additional-physician > button {
+    font-size: 16px;
+    margin: 10px 0 20px 0;
   }
 }
