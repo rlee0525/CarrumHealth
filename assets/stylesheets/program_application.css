@@ -116,5 +116,9 @@
 
 .contact > p {
   cursor: pointer;
-  margin: 15px 150px 0 0;
+  margin: 15px;
+}
+
+.contact > p:last-child {
+  margin-left: 50px;
 }

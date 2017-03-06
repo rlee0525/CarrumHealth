@@ -207,6 +207,10 @@ input[type=checkbox] {
   color: #4a9ee4;
 }
 
+#link-fa-2 {
+  display: none;
+}
+
 #link-fa:hover {
   cursor: pointer;
   font-weight: bold;

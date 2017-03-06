@@ -26676,9 +26676,10 @@
 	        'div',
 	        { className: 'header' },
 	        _react2.default.createElement('img', { id: 'logo1', src: 'http://res.cloudinary.com/rlee0525/image/upload/v1488677836/logo_ovxzod.png' }),
+	        _react2.default.createElement('img', { id: 'logo3', src: 'http://res.cloudinary.com/rlee0525/image/upload/v1488677836/logo_mobile_ifz940.png' }),
 	        _react2.default.createElement(
 	          'span',
-	          null,
+	          { id: 'welcome-message' },
 	          'Welcome Wayne Enterprises Members'
 	        ),
 	        _react2.default.createElement('img', { id: 'logo2', src: 'http://res.cloudinary.com/rlee0525/image/upload/v1488677836/wane_logo_vlhpu3.jpg' }),
@@ -27493,7 +27494,7 @@
 	    var _this = _possibleConstructorReturn(this, (Task.__proto__ || Object.getPrototypeOf(Task)).call(this, props));
 	
 	    _this.state = {
-	      step: 1,
+	      step: 4,
 	      pcp: true,
 	      name: "Raymond Lee",
 	      phoneNumber: "206-779-5143",
@@ -27933,6 +27934,11 @@
 	                  { id: 'link-fa', onClick: this.editPcp.bind(this) },
 	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-pencil', name: 'pencil' }),
 	                  ' Edit'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { id: 'link-fa-2', onClick: this.editPcp.bind(this) },
+	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-pencil', name: 'pencil' })
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -27953,6 +27959,11 @@
 	                  { id: 'link-fa', onClick: this.deletePcp.bind(this) },
 	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-trash', name: 'trash' }),
 	                  ' Delete'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { id: 'link-fa-2', onClick: this.deletePcp.bind(this) },
+	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-trash', name: 'trash' })
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -28010,6 +28021,11 @@
 	                  { id: 'link-fa', onClick: this.editOrtho.bind(this) },
 	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-pencil', name: 'pencil' }),
 	                  ' Edit'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { id: 'link-fa-2', onClick: this.editOrtho.bind(this) },
+	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-pencil', name: 'pencil' })
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -28030,6 +28046,11 @@
 	                  { id: 'link-fa', onClick: this.deleteOrtho.bind(this) },
 	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-trash', name: 'trash' }),
 	                  ' Delete'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { id: 'link-fa-2', onClick: this.deleteOrtho.bind(this) },
+	                  _react2.default.createElement(_reactFontawesome2.default, { className: 'fa-trash', name: 'trash' })
 	                )
 	              ),
 	              _react2.default.createElement(

@@ -15,13 +15,13 @@ body {
 }
 
 .left-bar {
-  height: 100vh;
+  min-height: 100vh;
   width: 8vw;
   background-color: #ffd039;
 }
 
 .right-bar {
-  height: 100vh;
+  min-height: 100vh;
   width: 8vw;
   background-color: #ffd039;
 }

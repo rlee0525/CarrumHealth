@@ -1,0 +1,98 @@
+@media screen and (max-width: 850px) {
+
+  /*header*/
+  #logo1 {
+    display: none;
+  }
+
+  img#logo2 {
+    height: 50px;
+  }
+
+  img#logo3 {
+    display: block;
+    margin-left: 2vw;
+    height: 50px;
+  }
+
+  #welcome-message {
+    display: none;
+  }
+
+  .fa-bars {
+    margin-right: 2vw;
+  }
+
+  /*layout*/
+  .main-home {
+    max-height: none;
+  }
+
+  /*task*/
+  #form-title {
+    font-size: 20px;
+  }
+
+  #release-instructions, #question, #checkbox-1, #checkbox-2 {
+    font-size: 16px;
+  }
+
+  #continue-button, #continue-button-2, #back-button {
+    font-size: 16px;
+    margin: 7px 0;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  #address-input, #address-input-2 {
+    flex-direction: column;
+  }
+
+  #address-one-input:first-child, #city-input, #state-input {
+    margin-right: 0;
+  }
+
+  .form-pcp > span, .form-pcp > div, .form-pcp > div > span {
+    padding: 4px 0;
+  }
+
+  #review-information, #title {
+    font-size: 16px;
+  }
+
+  #link-fa {
+    display: none;
+  }
+
+  #link-fa-2 {
+    display: block;
+    position: absolute;
+    color: #4a9ee4;
+    margin-left: 60vw;
+  }
+
+  #link-fa-2:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #information-container > div {
+    flex-direction: column;
+  }
+
+  #information-container > div > span, #information-container > div > div {
+    text-align: left;
+    width: 100%;
+  }
+
+  #information-container {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 20px;
+  }
+}

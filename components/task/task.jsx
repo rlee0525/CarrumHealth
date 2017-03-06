@@ -6,7 +6,7 @@ class Task extends React.Component {
     super(props);
 
     this.state = {
-      step: 1,
+      step: 4,
       pcp: true,
       name: "Raymond Lee",
       phoneNumber: "206-779-5143",
@@ -275,12 +275,18 @@ class Task extends React.Component {
                 <span id="link-fa" onClick={this.editPcp.bind(this)}>
                   <FontAwesome className="fa-pencil" name="pencil" /> Edit
                 </span>
+                <span id="link-fa-2" onClick={this.editPcp.bind(this)}>
+                  <FontAwesome className="fa-pencil" name="pencil" />
+                </span>
               </div>
               <div id="physician-phone">
                 <span id="details-label">Phone:</span>
                 <span>{this.state.phoneNumber}</span>
                 <span id="link-fa" onClick={this.deletePcp.bind(this)}>
                   <FontAwesome className="fa-trash" name="trash" /> Delete
+                </span>
+                <span id="link-fa-2" onClick={this.deletePcp.bind(this)}>
+                  <FontAwesome className="fa-trash" name="trash" />
                 </span>
               </div>
               <div id="physician-address">
@@ -302,12 +308,18 @@ class Task extends React.Component {
                 <span id="link-fa" onClick={this.editOrtho.bind(this)}>
                   <FontAwesome className="fa-pencil" name="pencil" /> Edit
                 </span>
+                <span id="link-fa-2" onClick={this.editOrtho.bind(this)}>
+                  <FontAwesome className="fa-pencil" name="pencil" />
+                </span>
               </div>
               <div id="physician-phone">
                 <span id="details-label">Phone:</span>
                 <span>{this.state.orthoPhoneNumber}</span>
                 <span id="link-fa" onClick={this.deleteOrtho.bind(this)}>
                   <FontAwesome className="fa-trash" name="trash" /> Delete
+                </span>
+                <span id="link-fa-2" onClick={this.deleteOrtho.bind(this)}>
+                  <FontAwesome className="fa-trash" name="trash" />
                 </span>
               </div>
               <div id="physician-address">

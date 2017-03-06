@@ -16,6 +16,10 @@ img#logo1 {
   height: 60px;
 }
 
+img#logo3 {
+  display: none;
+}
+
 img#logo2 {
   height: 60px;
 }
