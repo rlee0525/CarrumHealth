@@ -6,7 +6,7 @@ class Task extends React.Component {
     super(props);
 
     this.state = {
-      step: 4,
+      step: 1,
       pcp: true,
       name: "Raymond Lee",
       phoneNumber: "206-779-5143",

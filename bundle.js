@@ -27494,7 +27494,7 @@
 	    var _this = _possibleConstructorReturn(this, (Task.__proto__ || Object.getPrototypeOf(Task)).call(this, props));
 	
 	    _this.state = {
-	      step: 4,
+	      step: 1,
 	      pcp: true,
 	      name: "Raymond Lee",
 	      phoneNumber: "206-779-5143",
