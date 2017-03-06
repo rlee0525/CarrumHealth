@@ -27219,22 +27219,30 @@
 	            _react2.default.createElement(
 	              'svg',
 	              { className: 'circle' },
-	              _react2.default.createElement('circle', { className: 'active', id: 'circle-one' })
+	              _react2.default.createElement('circle', { className: 'active', id: 'circle-one', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawQualification();
+	                } })
 	            ),
 	            _react2.default.createElement(
 	              'svg',
 	              { className: 'circle' },
-	              _react2.default.createElement('circle', { className: '', id: 'circle-two' })
+	              _react2.default.createElement('circle', { className: '', id: 'circle-two', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawPreparation();
+	                } })
 	            ),
 	            _react2.default.createElement(
 	              'svg',
 	              { className: 'circle' },
-	              _react2.default.createElement('circle', { className: '', id: 'circle-three' })
+	              _react2.default.createElement('circle', { className: '', id: 'circle-three', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawStay();
+	                } })
 	            ),
 	            _react2.default.createElement(
 	              'svg',
 	              { className: 'circle' },
-	              _react2.default.createElement('circle', { className: '', id: 'circle-four' })
+	              _react2.default.createElement('circle', { className: '', id: 'circle-four', onClick: function onClick() {
+	                  _this2.deactivateAll();_this2.drawActivities();
+	                } })
 	            )
 	          ),
 	          _react2.default.createElement(

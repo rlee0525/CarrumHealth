@@ -166,10 +166,10 @@ class ProgressBar extends React.Component {
             <svg className="rect" id="bar-three"><rect className="" id="rect-three"/></svg>
           </div>
           <div className="circle-order">
-            <svg className="circle"><circle className="active" id="circle-one"/></svg>
-            <svg className="circle"><circle className="" id="circle-two"/></svg>
-            <svg className="circle"><circle className="" id="circle-three"/></svg>
-            <svg className="circle"><circle className="" id="circle-four"/></svg>
+            <svg className="circle"><circle className="active" id="circle-one" onClick={() => { this.deactivateAll(); this.drawQualification(); }}/></svg>
+            <svg className="circle"><circle className="" id="circle-two" onClick={() => { this.deactivateAll(); this.drawPreparation(); }}/></svg>
+            <svg className="circle"><circle className="" id="circle-three" onClick={() => { this.deactivateAll(); this.drawStay(); }}/></svg>
+            <svg className="circle"><circle className="" id="circle-four" onClick={() => { this.deactivateAll(); this.drawActivities(); }}/></svg>
           </div>
           <ul className="graphs">
             <li className="" id="graph-one">{this.progressBar(percent)}</li>

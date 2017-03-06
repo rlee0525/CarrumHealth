@@ -40,6 +40,7 @@ svg > circle {
   fill: white;
   stroke: #4caaf2;
   stroke-width: 2;
+	cursor: pointer;
 }
 
 #bar-one {
