@@ -21536,6 +21536,7 @@
 	    _react2.default.createElement(
 	      _reactRouter.Route,
 	      { path: '/', component: _app2.default },
+	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _dashboard2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: '/dashboard', component: _dashboard2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: '/task', component: _task2.default })
 	    )

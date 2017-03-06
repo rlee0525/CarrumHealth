@@ -8,6 +8,7 @@ const Root = () => {
   return(
     <Router history={hashHistory}>
       <Route path="/" component={App}>
+        <IndexRoute component={Dashboard}/>
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/task" component={Task} />
       </Route>
